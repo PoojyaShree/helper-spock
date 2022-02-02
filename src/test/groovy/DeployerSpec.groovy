@@ -1,6 +1,6 @@
 import com.homeaway.devtools.jenkins.testing.JenkinsPipelineSpecification
 
-public class helloSpec extends JenkinsPipelineSpecification {
+public class DeployerSpec extends JenkinsPipelineSpecification {
 
         def Jenkinsfile = null
 
@@ -9,7 +9,7 @@ public class helloSpec extends JenkinsPipelineSpecification {
         }*/
 
         def setup() {
-                Jenkinsfile = loadPipelineScriptForTest("/vars/hello.groovy")
+                Jenkinsfile = loadPipelineScriptForTest("/Deployer.groovy")
                 //Jenkinsfile.getBinding().setVariable( "scm", null )
                 //explicitlyMockPipelineVariable("deploy")
                 /*getPipelineMock("load")("hello.groovy") /*>> {
